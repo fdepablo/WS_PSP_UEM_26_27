@@ -18,6 +18,9 @@ public class Main {
         cliente5.start();
 
         try {
+           	// join() bloquea el hilo principal hasta que el hilo especificado 
+        	// termine su ejecución, de esta manera, el hilo principal esperará 
+        	// a que todos los hilos de los clientes terminen antes de continuar.
             cliente1.join();
             cliente2.join();
             cliente3.join();

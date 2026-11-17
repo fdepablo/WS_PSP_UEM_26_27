@@ -2,7 +2,7 @@ package modelo.entidad;
 
 public class Correo {
 	private int id;
-	private static String destinatario;
+	private String destinatario;
 	private String remitente;
 	private String asunto;
 	private String cuerpo;
@@ -17,7 +17,7 @@ public class Correo {
 		return destinatario;
 	}
 	public void setDestinatario(String destinatario) {
-		Correo.destinatario = destinatario;
+		this.destinatario = destinatario;
 	}
 	public String getRemitente() {
 		return remitente;
